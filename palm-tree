@@ -1,0 +1,12 @@
+for x in items2.indices {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(x)) {
+                self.passThroughPublisher2.send(items2[x])
+                
+//                if x == 3 {
+//                    self.passThroughPublisher2.send(completion: .failure(URLError.init(.cannotFindHost)))
+//                }
+        .background(.red)
+        .frame(width: 400, height: 400)
+        .background(.blue)
+    }
+}
